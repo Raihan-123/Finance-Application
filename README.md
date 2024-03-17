@@ -1,23 +1,23 @@
 # 👋Introduction
-Welcome to our Django to-do application's README page! You've come to the right place if you're looking for a dependable and effective budget application. The Django Budget App is a web-based budgeting application that allows users to manage their finances by adding, categorizing, and tracking their expenses. With this application, users can create their own custom categories, use default categories, and calculate their budget categorical-wise.
+- Welcome to our Finance Application's README!
 
-## Features
-User authentication and authorization
-Add and edit custom categories
-Default categories for common expenses
-Add and edit expenses for each category
-View and analyze expenses by category
-Generate reports to view spending patterns and budget performance
+Our Finance Application is a reliable and efficient web-based budgeting tool designed to help users manage their finances effectively. With this application, users can effortlessly add, categorize, and track their expenses
+
+## Key Features
+- Expense Management: Easily add and track your expenses.
+- Category Customization: Create custom categories tailored to your needs.
+- Default Categories: Utilize built-in categories for convenient expense organization.
+- Budget Calculation: Stay on top of your budget by tracking expenses across different categories.
 
 ## 🏃‍♂️Installation
 1. Clone the repository
 
 ``` bash
-git clone https://github.com/sea-rod/Budget-Helper.git
+git clone https://github.com/Raihan-123/Finance-Application.git
 ```
 2. Change the working directory
 ```bash
-cd Budget-Helper
+cd finance-application
 ```
 3. Install dependencies
 ```bash
@@ -77,11 +77,6 @@ python manage.py runserver
 5. Click on the "Confirm" button.
 
 
-## 🔨Built with
-- [Django](https://www.djangoproject.com/): Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
 
 ## Contributing
-Contributions to the Django Budget App are welcome! Please submit a pull request with any changes or improvements you would like to make.
-
-## License
-This project is licensed under the MIT license - see [`License`](LICENSE) file for details.
+Contributions to the Django Finance App are welcome! Please submit a pull request with any changes or improvements you would like to make.
