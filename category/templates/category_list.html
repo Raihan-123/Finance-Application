@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Expense Categories - Budget Helper App
+{% endblock title %}
+
+
+{% block content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+{% load static %}
+<script src="{% static 'js/script.js' %}"></script>
+<div class="row m-0" id="reverse">
+    <div class="container mt-5 mr-auto ml-0 col-sm-6">
+        {% for i in category_list %}
+        <div class="cat-list justify-content-between d-flex " onclick="change({{i.pk}})">
+            <span class="ml-0 ml-sm-5" style="font-weight: bold;">{{i}}</span>
+            <div>
+                <a href="{% url 'cat_update' i.pk %}" class="btn btn-primary ">Update</a>
+                <a href="{% url 'cat_delete' i.pk%}" class="btn btn-danger mr-sm-5 mr-0">Delete</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="col-sm-6 mr-auto ml-0">
+        <canvas id="pie1" style="width:100%;max-width:700px;" style="border: 0;"></canvas>
+        <script>
+            var xValues = [];
+            var yValues = [];
+            var barColors = [
+                "#7CB9E8", "#00308F", "#72A0C1", "#002D62", "#6CB4EE", "#002D62", "#007FFF", "#89CFF0",
+                "#0066b2"];
+
+            var sum = 0;
+
+            // {% for i in category_list  %}
+
+            xValues.push("{{i.name}}")
+            yValues.push({{ i.budget }}-{{ i.amt_left }})
+            sum += {{ i.amt_left }}
+            // {% endfor %}
+            console.log(yValues)
+            xValues.push("Amount Left")
+            yValues.push(sum)
+
+            new Chart("pie1", {
+                type: "pie",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues,
+                        borderWidth: 0,
+                    }]
+                },
+                options: {
+                    legend: {
+                        labels: {
+                            fontColor: "white",
+                            fontSize: 14,
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: "Category Analysis",
+                        fontColor: "white",
+                        fontSize: 14,
+                    }
+                }
+            });
+        </script>
+    </div>
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,150 @@
+body {
+    background: #1a1a1a;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/** login signup */
+#signup:hover {
+    background-color: rgb(161, 161, 161);
+}
+
+#login {
+    background-color: rgb(19, 19, 19);
+    color: rgb(240, 240, 240);
+    margin: 10% auto;
+    padding: 30px 20px;
+    border-radius: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.ht-100 {
+    height: 100%;
+}
+
+#submit {
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.fields {
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+#login-div {
+    background-image: linear-gradient(to bottom right, rgb(121, 121, 121), rgb(12, 12, 12));
+}
+
+#img-div {
+    display: none;
+}
+
+#menu li:hover {
+    text-shadow: 20px;
+    color: rgb(148, 148, 224);
+}
+
+
+/*  adding updating container */
+
+.cat-container {
+    background-color: rgb(58, 58, 58);
+    padding: 50px 30px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+.cat-fields {
+    border-radius: 10px;
+}
+
+/* spend list on home page */
+
+.spend-head {
+    background-color: rgb(226, 226, 226);
+    color: rgb(31, 31, 31);
+    text-align: center;
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+.spend-card {
+    padding: 10px 30px;
+    text-align: center;
+    margin: 10px auto;
+    background-color: rgb(226, 226, 226);
+    color: rgb(31, 31, 31);
+    border: 1px solid black;
+    border-radius: 10px;
+    /* margin-top: 200px; */
+}
+
+#btn-a {
+    margin-right: 10px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+
+}
+
+/*  home page if no list is empty */
+#add-container {
+    text-align: center;
+    margin: 150px auto;
+    padding: 70px 10px;
+    border: 4px dashed rgb(129, 129, 129);
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#add-container:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* cat list view */
+
+.cat-list {
+    background-color: rgb(177, 177, 177);
+    margin: 10px auto;
+    padding: 10px 10px;
+    color: rgb(24, 24, 24);
+    text-align: center;
+    border-radius: 20px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.cat-list:hover {
+    background-color: rgb(105, 105, 105);
+    font-size: 20px;
+    transition: 1s;
+}
+
+@media (min-width: 1200px) {
+    .spend-head {
+        padding: 10px 30px;
+        margin: 10px 15%;
+    }
+
+    #btn-a {
+        margin-right: 15%;
+    }
+
+    .spend-card {
+        padding: 10px 30px;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    #img-div {
+        display: block
+    }
+}
